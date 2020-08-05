@@ -1,0 +1,243 @@
+Determining the location of the ModelSim executable...
+
+Using: d:/quartus/modelsim_ase/win32aloem/
+
+To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
+Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-Altera will be used.
+
+**** Generating the ModelSim Testbench ****
+
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off frequency_meter_pro -c frequency_meter_pro --vector_source="C:/Users/albert NIU/Desktop/neo_plj/Waveform2.vwf" --testbench_file="C:/Users/albert NIU/Desktop/neo_plj/simulation/qsim/Waveform2.vwf.vht"
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+    Info: Copyright (C) 2017  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details.
+    Info: Processing started: Thu Jul 30 16:02:52 2020
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off frequency_meter_pro -c frequency_meter_pro --vector_source="C:/Users/albert NIU/Desktop/neo_plj/Waveform2.vwf" --testbench_file="C:/Users/albert NIU/Desktop/neo_plj/simulation/qsim/Waveform2.vwf.vht"
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+
+ Ignoring output pin "HEX2[2]" in vector source file when writing test bench files
+
+Completed successfully. 
+
+**** Generating the functional simulation netlist ****
+
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/albert NIU/Desktop/neo_plj/simulation/qsim/" frequency_meter_pro -c frequency_meter_pro
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+    Info: Copyright (C) 2017  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details.
+    Info: Processing started: Thu Jul 30 16:02:53 2020
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/albert NIU/Desktop/neo_plj/simulation/qsim/" frequency_meter_pro -c frequency_meter_pro
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (204019): Generated file frequency_meter_pro.vho in folder "C:/Users/albert NIU/Desktop/neo_plj/simulation/qsim//" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4640 megabytes
+    Info: Processing ended: Thu Jul 30 16:02:55 2020
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+Completed successfully. 
+
+**** Generating the ModelSim .do script ****
+
+C:/Users/albert NIU/Desktop/neo_plj/simulation/qsim/frequency_meter_pro.do generated.
+
+Completed successfully. 
+
+**** Running the ModelSim simulation ****
+
+d:/quartus/modelsim_ase/win32aloem//vsim -c -do frequency_meter_pro.do
+
+Reading D:/quartus/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+
+# do frequency_meter_pro.do
+
+# ** Warning: (vlib-34) Library already exists at "work".
+
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:02:58 on Jul 30,2020
+# vcom -work work frequency_meter_pro.vho 
+
+# -- Loading package STANDARD
+
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package fiftyfivenm_atom_pack
+# -- Loading package fiftyfivenm_components
+# -- Compiling entity hard_block
+# -- Compiling architecture structure of hard_block
+# -- Compiling entity frequency_meter_pro
+# -- Compiling architecture structure of frequency_meter_pro
+
+# End time: 16:02:59 on Jul 30,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:02:59 on Jul 30,2020
+# vcom -work work Waveform2.vwf.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity frequency_meter_pro_vhd_vec_tst
+# -- Compiling architecture frequency_meter_pro_arch of frequency_meter_pro_vhd_vec_tst
+# End time: 16:02:59 on Jul 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+# vsim -novopt -c -t 1ps -L fiftyfivenm -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.CNT1K_vhd_vec_tst 
+# Start time: 16:03:00 on Jul 30,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cnt1k_vhd_vec_tst(cnt1k_arch)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading altera.dffeas_pack
+# Loading altera.altera_primitives_components
+# Loading fiftyfivenm.fiftyfivenm_atom_pack(body)
+# Loading fiftyfivenm.fiftyfivenm_components
+# Loading work.cnt1k(structure)
+# Loading work.hard_block(structure)
+# Loading fiftyfivenm.fiftyfivenm_lcell_comb(vital_lcell_comb)
+# Loading fiftyfivenm.fiftyfivenm_io_obuf(behavior)
+# Loading fiftyfivenm.fiftyfivenm_io_ibuf(behavior)
+# Loading fiftyfivenm.fiftyfivenm_clkctrl(vital_clkctrl)
+# Loading fiftyfivenm.fiftyfivenm_ena_reg(behave)
+# Loading altera.dffeas(vital_dffeas)
+# Loading fiftyfivenm.fiftyfivenm_unvm(behavior)
+# Loading fiftyfivenm.fiftyfivenm_adcblock(behavior)
+# ** Warning: Design size of 46551 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# after#33
+
+# End time: 16:03:02 on Jul 30,2020, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 1
+
+Completed successfully. 
+
+**** Converting ModelSim VCD to vector waveform ****
+
+Reading C:/Users/albert NIU/Desktop/neo_plj/Waveform2.vwf...
+
+Reading C:/Users/albert NIU/Desktop/neo_plj/simulation/qsim/frequency_meter_pro.msim.vcd...
+
+Processing channel transitions... 
+
+Warning: HEX0[7] - signal not found in VCD.
+
+Warning: HEX0[6] - signal not found in VCD.
+
+Warning: HEX0[5] - signal not found in VCD.
+
+Warning: HEX0[4] - signal not found in VCD.
+
+Warning: HEX0[3] - signal not found in VCD.
+
+Warning: HEX0[2] - signal not found in VCD.
+
+Warning: HEX0[1] - signal not found in VCD.
+
+Warning: HEX0[0] - signal not found in VCD.
+
+Warning: HEX1[7] - signal not found in VCD.
+
+Warning: HEX1[6] - signal not found in VCD.
+
+Warning: HEX1[5] - signal not found in VCD.
+
+Warning: HEX1[4] - signal not found in VCD.
+
+Warning: HEX1[3] - signal not found in VCD.
+
+Warning: HEX1[2] - signal not found in VCD.
+
+Warning: HEX1[1] - signal not found in VCD.
+
+Warning: HEX1[0] - signal not found in VCD.
+
+Warning: HEX2[7] - signal not found in VCD.
+
+Warning: HEX2[6] - signal not found in VCD.
+
+Warning: HEX2[5] - signal not found in VCD.
+
+Warning: HEX2[4] - signal not found in VCD.
+
+Warning: HEX2[3] - signal not found in VCD.
+
+Warning: HEX2[2] - signal not found in VCD.
+
+Warning: HEX2[1] - signal not found in VCD.
+
+Warning: HEX2[0] - signal not found in VCD.
+
+Warning: HEX3[7] - signal not found in VCD.
+
+Warning: HEX3[6] - signal not found in VCD.
+
+Warning: HEX3[5] - signal not found in VCD.
+
+Warning: HEX3[4] - signal not found in VCD.
+
+Warning: HEX3[3] - signal not found in VCD.
+
+Warning: HEX3[2] - signal not found in VCD.
+
+Warning: HEX3[1] - signal not found in VCD.
+
+Warning: HEX3[0] - signal not found in VCD.
+
+Warning: OVER - signal not found in VCD.
+
+Warning: SW[6] - signal not found in VCD.
+
+Warning: SW[5] - signal not found in VCD.
+
+Warning: SW[4] - signal not found in VCD.
+
+Warning: SW[3] - signal not found in VCD.
+
+Warning: SW[2] - signal not found in VCD.
+
+Warning: SW[1] - signal not found in VCD.
+
+Warning: SW[0] - signal not found in VCD.
+
+Writing the resulting VWF to C:/Users/albert NIU/Desktop/neo_plj/simulation/qsim/frequency_meter_pro_20200730160302.sim.vwf
+
+Finished VCD to VWF conversion.
+
+Completed successfully. 
+
+All completed.

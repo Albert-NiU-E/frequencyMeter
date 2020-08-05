@@ -1,0 +1,323 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/albert NIU/Desktop/neo_plj/simulation/qsim
+Ecnt1k
+Z1 w1596045072
+Z2 DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 <L;kP5e_CYmnMCFQ1Hi7l2
+Z3 DPx11 fiftyfivenm 22 fiftyfivenm_components 0 22 Zhd>PXSadeo7OO6QmOiHT3
+Z4 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z5 DPx6 altera 11 dffeas_pack 0 22 ?bDUB9Db2N8iCCALNL;CT3
+Z6 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z9 DPx6 altera 28 altera_primitives_components 0 22 c]VUMXSEi8Z`KM1bem<:B3
+R0
+Z10 8frequency_meter_pro.vho
+Z11 Ffrequency_meter_pro.vho
+l0
+L90
+V2MfI4XFgRc_31:SnngI@93
+!s100 Qk98G;7T]fPRc^0^^bS7W1
+Z12 OV;C;10.5b;63
+32
+Z13 !s110 1596045073
+!i10b 1
+Z14 !s108 1596045073.000000
+Z15 !s90 -work|work|frequency_meter_pro.vho|
+Z16 !s107 frequency_meter_pro.vho|
+!i113 1
+Z17 o-work work
+Z18 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 5 cnt1k 0 22 2MfI4XFgRc_31:SnngI@93
+l539
+L121
+VlSQZmjfZ^S@7<4XdKH28C2
+!s100 5b8@HB_I2P;i;ESk7WdV_1
+R12
+32
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 1
+R17
+R18
+Ecnt1k_vhd_vec_tst
+Z19 w1596045071
+R7
+R8
+R0
+Z20 8Waveform.vwf.vht
+Z21 FWaveform.vwf.vht
+l0
+L31
+VL4J7;YFeS?X0jgSdniX9U1
+!s100 ;8D:=]2EADNPkgLS`]86E3
+R12
+32
+R13
+!i10b 1
+R14
+Z22 !s90 -work|work|Waveform.vwf.vht|
+Z23 !s107 Waveform.vwf.vht|
+!i113 1
+R17
+R18
+Acnt1k_arch
+R7
+R8
+DEx4 work 17 cnt1k_vhd_vec_tst 0 22 L4J7;YFeS?X0jgSdniX9U1
+l54
+L33
+VPVICdBJCK`DZPdl6?Q4cE2
+!s100 NQ2_3jQdkT6^e_UgWh:W>1
+R12
+32
+R13
+!i10b 1
+R14
+R22
+R23
+!i113 1
+R17
+R18
+Edisplay
+Z24 w1596045620
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R0
+R10
+R11
+l0
+L90
+VYCP[1m:8YZ5XHdF;?Je?R3
+!s100 LzgLcnfgakchzJKGZ`E3Q3
+R12
+32
+Z25 !s110 1596045621
+!i10b 1
+Z26 !s108 1596045621.000000
+R15
+R16
+!i113 1
+R17
+R18
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 7 display 0 22 YCP[1m:8YZ5XHdF;?Je?R3
+l287
+L153
+Vi2A]z:<8KPRj<8TIQDX_m3
+!s100 MkfG5hL8P>AW2bQiAS78P3
+R12
+32
+R25
+!i10b 1
+R26
+R15
+R16
+!i113 1
+R17
+R18
+Edisplay_vhd_vec_tst
+Z27 w1596045619
+R7
+R8
+R0
+Z28 8Waveform1.vwf.vht
+Z29 FWaveform1.vwf.vht
+l0
+L31
+V0K^Yoic5U`BKTn[0?`2dj1
+!s100 CIYgzMW>5S?:J89@N5KZ@2
+R12
+32
+R25
+!i10b 1
+R26
+Z30 !s90 -work|work|Waveform1.vwf.vht|
+Z31 !s107 Waveform1.vwf.vht|
+!i113 1
+R17
+R18
+Adisplay_arch
+R7
+R8
+DEx4 work 19 display_vhd_vec_tst 0 22 0K^Yoic5U`BKTn[0?`2dj1
+l56
+L33
+VfZZcSk=TH`8><`:KaGWPc1
+!s100 ch8H^oV[RBIm]T4NBlFaQ0
+R12
+32
+R25
+!i10b 1
+R26
+R30
+R31
+!i113 1
+R17
+R18
+Efrequency_meter_pro
+Z32 w1596096174
+R4
+R2
+R6
+R7
+R8
+R3
+R0
+R10
+R11
+l0
+L88
+V<l7;P<4A7e74H4LZnW:Uz3
+!s100 H^S03hdiMEYLKIjlcIBYF3
+R12
+32
+Z33 !s110 1596096179
+!i10b 1
+Z34 !s108 1596096178.000000
+R15
+R16
+!i113 1
+R17
+R18
+Astructure
+R4
+R2
+R6
+R7
+R8
+R3
+DEx4 work 19 frequency_meter_pro 0 22 <l7;P<4A7e74H4LZnW:Uz3
+l216
+L144
+VEhG7[AiRFdJAI2h26Kj<H1
+!s100 mh;GhJSDKNR=HKzlHb:Si0
+R12
+32
+R33
+!i10b 1
+R34
+R15
+R16
+!i113 1
+R17
+R18
+Efrequency_meter_pro_vhd_vec_tst
+Z35 w1596096173
+R7
+R8
+R0
+Z36 8Waveform2.vwf.vht
+Z37 FWaveform2.vwf.vht
+l0
+L31
+V2zY:DfM;zFeBAj:[4foBK1
+!s100 KJNzYb^hGoPYonl44MSQ?2
+R12
+32
+R33
+!i10b 1
+Z38 !s108 1596096179.000000
+Z39 !s90 -work|work|Waveform2.vwf.vht|
+Z40 !s107 Waveform2.vwf.vht|
+!i113 1
+R17
+R18
+Afrequency_meter_pro_arch
+R7
+R8
+DEx4 work 31 frequency_meter_pro_vhd_vec_tst 0 22 2zY:DfM;zFeBAj:[4foBK1
+l54
+L33
+V3c1Uf1z39@I1NfdiNFV5c1
+!s100 18J8aOEGGOQEeF@>fi>YQ2
+R12
+32
+R33
+!i10b 1
+R38
+R39
+R40
+!i113 1
+R17
+R18
+Ehard_block
+R32
+R4
+R2
+R6
+R7
+R8
+R3
+R0
+R10
+R11
+l0
+L34
+V8_BbEmGd;OHS6h@;gFc7W3
+!s100 ROH=D<N4CT6aCZ<37A[_?0
+R12
+32
+R33
+!i10b 1
+R34
+R15
+R16
+!i113 1
+R17
+R18
+Astructure
+R4
+R2
+R6
+R7
+R8
+R3
+DEx4 work 10 hard_block 0 22 8_BbEmGd;OHS6h@;gFc7W3
+l75
+L53
+Vg=W`CQ>24lhYF71zFSkY43
+!s100 zW6ML5NVY?Ai`]`n2XhME3
+R12
+32
+R33
+!i10b 1
+R34
+R15
+R16
+!i113 1
+R17
+R18
